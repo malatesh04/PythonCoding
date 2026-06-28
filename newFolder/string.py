@@ -1,2 +1,0 @@
-s = "malatesh"
-print(s)
