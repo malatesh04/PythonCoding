@@ -1,0 +1,2 @@
+s = "malatesh"
+print(s)
