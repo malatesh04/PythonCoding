@@ -130,7 +130,7 @@ regex = r"\S" # capita S -->  not spaces
 l = re.findall(regex,text)
 print(l)
 
-COMBINATION OF META TAGS 
+# COMBINATION OF META TAGS 
 
 text = "foot is feet and tooth is teeth"
 regex = r"[aeiou]{2}" # vowels + {}
