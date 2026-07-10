@@ -1,146 +1,146 @@
 import re
-# text = "Python is super is easy."
-# regex = r"." # -->'.' means single character -->'\'escapes(special character)
-# l = re.findall(regex,text)
-# print(l)
+text = "Python is super is easy."
+regex = r"." # -->'.' means single character -->'\'escapes(special character)
+l = re.findall(regex,text)
+print(l)
 
-# text = "Python is super is easy."
-# regex = r"\." # -->'.' means single character -->'\'escapes(special character)
-# l = re.findall(regex,text)
-# print(l)
+text = "Python is super is easy."
+regex = r"\." # -->'.' means single character -->'\'escapes(special character)
+l = re.findall(regex,text)
+print(l)
 
-# text = "Python is super is easy."
-# regex = r"Python|super" 
-# l = re.findall(regex,text)
-# print(l)
+text = "Python is super is easy."
+regex = r"Python|super" 
+l = re.findall(regex,text)
+print(l)
 
-# text = "whole hole is not a wwwhole."
-# regex = r"w*hole" 
-# l = re.findall(regex,text)
-# print(l)
+text = "whole hole is not a wwwhole."
+regex = r"w*hole" 
+l = re.findall(regex,text)
+print(l)
 
 
-# text = "whole hole is not a wwwhole."
-# regex = r"w?hole" 
-# l = re.findall(regex,text)
-# print(l)
+text = "whole hole is not a wwwhole."
+regex = r"w?hole" 
+l = re.findall(regex,text)
+print(l)
 
-# text = "whole hole is not a wwwhole."
-# regex = r"w+hole"
-# l = re.findall(regex,text)
-# print(l)
+text = "whole hole is not a wwwhole."
+regex = r"w+hole"
+l = re.findall(regex,text)
+print(l)
 
-# text = "whole hole is not a | wwwhole."
-# regex = r"\|"
-# l = re.findall(regex,text)
-# print(l)
+text = "whole hole is not a | wwwhole."
+regex = r"\|"
+l = re.findall(regex,text)
+print(l)
 
-# text = "I know that no one is there in the school now"
-# regex = r"know|no|now" #this '|' is not efficiant that takes more steps
-# l = re.findall(regex,text)
-# print(l)
+text = "I know that no one is there in the school now"
+regex = r"know|no|now" #this '|' is not efficiant that takes more steps
+l = re.findall(regex,text)
+print(l)
 
-# text = "I know that no one is there in the school now"
-# regex = r"k?now?"
-# l = re.findall(regex,text)
-# print(l)
+text = "I know that no one is there in the school now"
+regex = r"k?now?"
+l = re.findall(regex,text)
+print(l)
 
-# text = '''gogle
-#     google
-#     gooogle
-#     goooogle
-#     gooooogle
-#     goooooogle'''
-# regex = r"go{2}gle"
-# l = re.findall(regex,text)
-# print(l)
+text = '''gogle
+    google
+    gooogle
+    goooogle
+    gooooogle
+    goooooogle'''
+regex = r"go{2}gle"
+l = re.findall(regex,text)
+print(l)
 
-# text = "python is nothing to make snake python"
-# regex = r"^python" # first python word in text
-# l = re.search(regex,text)
-# print(l)
+text = "python is nothing to make snake python"
+regex = r"^python" # first python word in text
+l = re.search(regex,text)
+print(l)
 
-# text = "python is nothing to make snake python"
-# regex = r"python$" # last python word in python
-# l = re.search(regex,text)
-# print(l)
+text = "python is nothing to make snake python"
+regex = r"python$" # last python word in python
+l = re.search(regex,text)
+print(l)
 
-# text = "python java ai data science"
-# regex = r"a|e|i|o|u" # not efficiant
-# l = re.findall(regex,text)
-# print(l)
+text = "python java ai data science"
+regex = r"a|e|i|o|u" # not efficiant
+l = re.findall(regex,text)
+print(l)
 
-# text = "python java ai data science"
-# regex = r"[^aeiou]" #not vowels
-# l = re.findall(regex,text)
-# print(l)
+text = "python java ai data science"
+regex = r"[^aeiou]" #not vowels
+l = re.findall(regex,text)
+print(l)
 
-# text = "python java ai data science"
-# regex = r"[aeiou]" #vowels in string
-# l = re.findall(regex,text)
-# print(l)
+text = "python java ai data science"
+regex = r"[aeiou]" #vowels in string
+l = re.findall(regex,text)
+print(l)
 
-# text = "my number is : 7676115923"
-# regex = r"[a-zA-Z]" #find all small a to z and capital A to Z
-# l = re.findall(regex,text)
-# print(l)
+text = "my number is : 7676115923"
+regex = r"[a-zA-Z]" #find all small a to z and capital A to Z
+l = re.findall(regex,text)
+print(l)
 
-# text = "my number is : 7676115923"
-# regex = r"[0-9]" #find numeric
-# l = re.findall(regex,text)
-# print(l)
+text = "my number is : 7676115923"
+regex = r"[0-9]" #find numeric
+l = re.findall(regex,text)
+print(l)
 
-# text = "my number is : 7676115923"
-# regex = r"[a-zA-Z0-9]" # all AlphaNumeric
-# l = re.findall(regex,text)
-# print(l)
+text = "my number is : 7676115923"
+regex = r"[a-zA-Z0-9]" # all AlphaNumeric
+l = re.findall(regex,text)
+print(l)
 
-# text = "my number is : 7676115923"
-# regex = r"\w" # small w --> all alphanumeric
-# l = re.findall(regex,text)
-# print(l)
+text = "my number is : 7676115923"
+regex = r"\w" # small w --> all alphanumeric
+l = re.findall(regex,text)
+print(l)
 
-# text = "my number is : 7676115923"
-# regex = r"[^a-zA-Z0-9]" # ^ -->> not alpha numeric
-# l = re.findall(regex,text)
-# print(l)
+text = "my number is : 7676115923"
+regex = r"[^a-zA-Z0-9]" # ^ -->> not alpha numeric
+l = re.findall(regex,text)
+print(l)
 
-# text = "my number is : 7676115923"
-# regex = r"\W" # capital W --> not alpha numeric
-# l = re.findall(regex,text)
-# print(l)
+text = "my number is : 7676115923"
+regex = r"\W" # capital W --> not alpha numeric
+l = re.findall(regex,text)
+print(l)
 
-# text = "my number is : 7676115923"
-# regex = r"\d" # small d -->  numeric digits
-# l = re.findall(regex,text)
-# print(l)
+text = "my number is : 7676115923"
+regex = r"\d" # small d -->  numeric digits
+l = re.findall(regex,text)
+print(l)
 
-# text = "my number is : 7676115923"
-# regex = r"\D" # capital D -->  non numeric digits
-# l = re.findall(regex,text)
-# print(l)
+text = "my number is : 7676115923"
+regex = r"\D" # capital D -->  non numeric digits
+l = re.findall(regex,text)
+print(l)
 
-# text = "my number is : 7676115923"
-# regex = r"\s" # small s -->  spaces
-# l = re.findall(regex,text)
-# print(l)
+text = "my number is : 7676115923"
+regex = r"\s" # small s -->  spaces
+l = re.findall(regex,text)
+print(l)
 
-# text = "my number is : 7676115923"
-# regex = r"\S" # capita S -->  not spaces
-# l = re.findall(regex,text)
-# print(l)
+text = "my number is : 7676115923"
+regex = r"\S" # capita S -->  not spaces
+l = re.findall(regex,text)
+print(l)
 
-# COMBINATION OF META TAGS 
+COMBINATION OF META TAGS 
 
-# text = "foot is feet and tooth is teeth"
-# regex = r"[aeiou]{2}" # vowels + {}
-# l = re.findall(regex,text)
-# print(l)
+text = "foot is feet and tooth is teeth"
+regex = r"[aeiou]{2}" # vowels + {}
+l = re.findall(regex,text)
+print(l)
 
-# text = "only the weak wait for the week to end"
-# regex = r"we[ae]k"
-# l = re.findall(regex,text)
-# print(l)
+text = "only the weak wait for the week to end"
+regex = r"we[ae]k"
+l = re.findall(regex,text)
+print(l)
 
 
 
