@@ -67,7 +67,6 @@ class Shape(ABC):
     @abstractmethod
     def disp_area(self):
         pass
-
 class Circle(Shape):
     def __init__(self):
         self.r = 0
