@@ -1,12 +1,6 @@
 ERROR:root:exception occured
 Traceback (most recent call last):
-  File "c:\Users\Admin\Documents\Tap Acadamy\ExceptionHandling\Loggers.py", line 104, in div
-    q = num/den
-        ~~~^~~~
-ZeroDivisionError: division by zero
-ERROR:root:exception occured
-Traceback (most recent call last):
-  File "c:\Users\Admin\Documents\Tap Acadamy\ExceptionHandling\Loggers.py", line 104, in div
-    q = num/den
-        ~~~^~~~
-ZeroDivisionError: division by zero
+  File "c:\Users\Admin\Documents\Tap Acadamy\ExceptionHandling\LoggersContinue.py", line 9, in fun
+    r = int(input('enter the rank of language\n'))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'uments\\Tap Acadamy\\ExceptionHandling\\LoggersContinue.py"'
